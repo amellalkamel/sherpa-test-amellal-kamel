@@ -1,7 +1,8 @@
 .evenement {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   background-color: #eeeeee;
   width: 180px;
@@ -13,4 +14,11 @@
 
 .evenement-content {
   display: flex;
+  justify-content: center;
+  width: 160px;
+  height: 20px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
 }
