@@ -1,0 +1,16 @@
+.evenement {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: absolute;
+  background-color: #eeeeee;
+  width: 180px;
+  height: 320px;
+  margin-top: -40%;
+  margin-left: 1%;
+  border-radius: 3%;
+}
+
+.evenement-content {
+  display: flex;
+}
