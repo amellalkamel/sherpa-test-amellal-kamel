@@ -3,16 +3,17 @@ import './header.css';
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    console.log('props', this.props);
+    console.log('props in header', this.props);
   }
 
   render() {
     return (
-      <div className="header" onClick={this.props.handleClick}>
-        <div className="title">
-          {' '}
-          <h1>Marketplace</h1>
-        </div>
+      <div
+        id="header"
+        className={this.props.classHeader}
+        onClick={this.props.handleClick}
+      >
+        <div className="title">Marketplace</div>
       </div>
     );
   }

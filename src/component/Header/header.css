@@ -2,11 +2,22 @@
   padding: 0;
   margin: 0;
 }
-.header {
+#header.normalclass {
   height: 100px;
   background-color: #eeeeee;
+  transition: 0.5s;
 }
-.title h1 {
+#header.grandclass {
+  height: 100px;
+  background-color: #eeeeee;
+  transition: 0.5s;
+}
+#header.petitclass {
+  height: 50px;
+  background-color: #eeeeee;
+  transition: 0.5s;
+}
+.title {
   position: relative;
   top: 50%;
   left: 50%;

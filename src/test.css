@@ -1,0 +1,22 @@
+#box {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+
+#seconddiv.coolclass {
+  max-height: 100%;
+  background: purple;
+}
+
+#seconddiv {
+  max-height: 0%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.App {
+  height: 100%;
+}
+#root {
+  height: 1200px;
+}
