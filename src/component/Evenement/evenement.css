@@ -4,10 +4,10 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  background-color: #eeeeee;
+  background-color: #dcdbdb;
   width: 180px;
-  height: 250px;
-  margin-top: -39%;
+  height: 260px;
+  margin-top: -38%;
   margin-left: 1%;
   border-radius: 5%;
   transition: 0.9s;
@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  background-color: #eeeeee;
+  background-color: #dcdbdb;
   width: 180px;
   height: 250px;
   margin-top: -20%;

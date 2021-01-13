@@ -1,9 +1,9 @@
-import React from 'react';
-import './header.css';
+import React from "react";
+import "./header.css";
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    console.log('props in header', this.props);
+    console.log("props in header", this.props);
   }
 
   render() {
@@ -13,7 +13,7 @@ class Header extends React.Component {
         className={this.props.classHeader}
         onClick={this.props.handleClick}
       >
-        <div className="title">Marketplace</div>
+        <p>Marketplace</p>
       </div>
     );
   }

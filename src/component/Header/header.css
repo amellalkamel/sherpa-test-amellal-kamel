@@ -16,7 +16,8 @@
   background-color: #eeeeee;
   transition: 0.5s;
 }
-.title {
+
+p {
   position: relative;
   font-size: 50px;
   top: 50%;

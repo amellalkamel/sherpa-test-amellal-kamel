@@ -15,11 +15,17 @@ class App extends React.Component {
       classContent: "normalclass",
       classEvent: "normalclass",
       classCarte: "normalclass",
+      infos: [],
     };
   }
   async componentWillMount() {
     const datas = await fetch("https://tt-sherpa-backend.herokuapp.com/events");
-    datas.json().then((data) => console.log("data is", data));
+    datas.json().then(async (data) => {
+      console.log("data is", data);
+      await this.setState({
+        infos: data,
+      });
+    });
   }
   handleClick = () => {
     console.log("je suis clicker");
@@ -31,31 +37,38 @@ class App extends React.Component {
         classHeader: "petitclass",
         classContent: "hide",
         classEvent: "fixe",
+        classCarte: "hide",
       });
     } else {
       this.setState({
         classHeader: "grandclass",
         classContent: "normalclass",
         classEvent: "normalclass",
+        classCarte: "normalclass",
       });
     }
   };
   render() {
     // console.log("show content", this.state.showContent);
     // console.log("classHeader", this.state.classHeader);
-    console.log("classEvent", this.state.classEvent);
+    console.log("classCarte", this.state.classCarte);
+    console.log("infoss", this.state.infos);
     return (
       <div className="App">
-        <Header
-          {...this.state}
-          handleClick={this.handleClick}
-          className={this.state.classHeader}
-        />
+        <Header {...this.state} handleClick={this.handleClick} />
         <Profil />
-        <Content {...this.state} className={this.state.classContent} />
+        <Content {...this.state} />
         <Main />
-        <Evenement {...this.state} className={this.state.classEvent} />
-        <Carte {...this.state} className={this.state.classCarte} />
+        <Evenement {...this.state} />
+        {this.state.infos.map((info, index) => (
+          <Carte
+            key={index}
+            title={info.title}
+            detail={info.detail}
+            logo={info.log}
+            {...this.state}
+          />
+        ))}
       </div>
     );
   }
