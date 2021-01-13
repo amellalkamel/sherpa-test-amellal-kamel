@@ -1,4 +1,4 @@
-.evenement {
+#evenement.normalclass {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,11 +7,25 @@
   background-color: #eeeeee;
   width: 180px;
   height: 250px;
-  margin-top: -54%;
+  margin-top: -39%;
   margin-left: 1%;
   border-radius: 5%;
+  transition: 0.9s;
 }
-
+#evenement.fixe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #eeeeee;
+  width: 180px;
+  height: 250px;
+  margin-top: -20%;
+  margin-left: 1%;
+  border-radius: 5%;
+  transition: 0.9s;
+}
 .evenement-content {
   display: flex;
   justify-content: center;

@@ -7,7 +7,7 @@ class Evenement extends React.Component {
 
   render() {
     return (
-      <div className="evenement">
+      <div id="evenement" className={this.props.classEvent}>
         <div className="evenement-content"> Companies</div>
         <div className="evenement-content"> Members</div>
         <div className="evenement-content"> Events</div>

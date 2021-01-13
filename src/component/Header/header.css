@@ -5,7 +5,6 @@
 #header.normalclass {
   height: 100px;
   background-color: #eeeeee;
-  transition: 0.5s;
 }
 #header.grandclass {
   height: 100px;
@@ -13,13 +12,14 @@
   transition: 0.5s;
 }
 #header.petitclass {
-  height: 50px;
+  height: 35px;
   background-color: #eeeeee;
   transition: 0.5s;
 }
 .title {
   position: relative;
+  font-size: 50px;
   top: 50%;
   left: 50%;
-  transform: translate(-8%, 50%);
+  transform: translate(-7%, -70%);
 }

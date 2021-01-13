@@ -7,7 +7,7 @@ class Content extends React.Component {
 
   render() {
     return (
-      <div className="content">
+      <div id="content" className={this.props.classContent}>
         <div className="title-content-hero">
           <h2>Hero</h2>
         </div>
