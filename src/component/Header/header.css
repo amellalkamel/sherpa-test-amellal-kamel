@@ -17,10 +17,26 @@
   transition: 0.5s;
 }
 
-p {
+/* p {
   position: relative;
   font-size: 50px;
   top: 50%;
   left: 50%;
   transform: translate(-7%, -70%);
+} */
+.title_grand {
+  position: relative;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-7%, -70%);
+  transition: 0.8s;
+}
+.title_petit {
+  position: relative;
+  font-size: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-7%, -70%);
+  transition: 0.8s;
 }

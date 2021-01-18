@@ -12,6 +12,7 @@ class App extends React.Component {
     this.state = {
       showContent: true,
       classHeader: "normalclass",
+      classHeaderTitle: "title_grand",
       classContent: "normalclass",
       classEvent: "normalclass",
       classCarte: "carte-container",
@@ -35,6 +36,7 @@ class App extends React.Component {
     if (this.state.showContent == true) {
       this.setState({
         classHeader: "petitclass",
+        classHeaderTitle: "title_petit",
         classContent: "hide",
         classEvent: "fixe",
         classCarte: "hide",
@@ -42,6 +44,7 @@ class App extends React.Component {
     } else {
       this.setState({
         classHeader: "grandclass",
+        classHeaderTitle: "title_grand",
         classContent: "normalclass",
         classEvent: "normalclass",
         classCarte: "carte-container",

@@ -13,7 +13,7 @@ class Header extends React.Component {
         className={this.props.classHeader}
         onClick={this.props.handleClick}
       >
-        <p>Marketplace</p>
+        <div className={this.props.classHeaderTitle}>Marketplace</div>
       </div>
     );
   }
