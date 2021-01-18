@@ -14,7 +14,7 @@ class App extends React.Component {
       classHeader: "normalclass",
       classContent: "normalclass",
       classEvent: "normalclass",
-      classCarte: "normalclass",
+      classCarte: "carte-container",
       infos: [],
     };
   }
@@ -44,7 +44,7 @@ class App extends React.Component {
         classHeader: "grandclass",
         classContent: "normalclass",
         classEvent: "normalclass",
-        classCarte: "normalclass",
+        classCarte: "carte-container",
       });
     }
   };
@@ -60,15 +60,17 @@ class App extends React.Component {
         <Content {...this.state} />
         <Main />
         <Evenement {...this.state} />
-        {this.state.infos.map((info, index) => (
-          <Carte
-            key={index}
-            title={info.title}
-            detail={info.detail}
-            logo={info.log}
-            {...this.state}
-          />
-        ))}
+        <div id="cartes" className={this.state.classCarte}>
+          {this.state.infos.map((info, index) => (
+            <Carte
+              key={index}
+              title={info.title}
+              detail={info.detail}
+              logo={info.log}
+              {...this.state}
+            />
+          ))}
+        </div>
       </div>
     );
   }
