@@ -20,6 +20,10 @@ class App extends React.Component {
       classMain: "main-petit",
       classMainTitle: "main-title-hide",
       classMainGirs: "main-grid-hide",
+      classMainLogoBig: "main-logo-hide",
+      classMainDetails: "main-detail-hide",
+      classMainLogo: "main-logo-gris-hide",
+      classMainEvent: "main-event-hide",
       infos: [],
     };
   }
@@ -45,6 +49,10 @@ class App extends React.Component {
       classMain: "main-petit",
       classMainTitle: "main-title-hide",
       classMainGirs: "main-grid-hide",
+      classMainLogoBig: "main-logo-hide",
+      classMainDetails: "main-detail-hide",
+      classMainLogo: "main-logo-gris-hide",
+      classMainEvent: "main-event-hide",
     });
   };
   handleClickCarte = (event) => {
@@ -59,6 +67,10 @@ class App extends React.Component {
       classMain: "main-grand",
       classMainTitle: "main-title",
       classMainGirs: "main-grid",
+      classMainLogoBig: "main-logo",
+      classMainDetails: "main-detail",
+      classMainLogo: "main-logo-gris",
+      classMainEvent: "main-event",
     });
   };
   render() {

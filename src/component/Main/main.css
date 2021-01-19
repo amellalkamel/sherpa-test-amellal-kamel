@@ -57,3 +57,86 @@
   opacity: 0;
   transition: 0.9s;
 }
+.main-logo {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  top: 50px;
+  background-color: white;
+  border-radius: 30px;
+  transition: 0.9s;
+}
+.main-logo-hide {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  top: 50px;
+  background-color: white;
+  border-radius: 30px;
+  transition: 0.9s;
+  opacity: 0;
+}
+.main-detail {
+  position: absolute;
+  width: 200px;
+  height: 35px;
+  background-color: white;
+  left: 195px;
+  top: 50px;
+  border-radius: 30px;
+  text-align: center;
+  transition: 0.7s;
+}
+.main-detail-hide {
+  position: absolute;
+  width: 200px;
+  height: 35px;
+  background-color: white;
+  left: 195px;
+  top: 50px;
+  border-radius: 30px;
+  text-align: center;
+  transition: 0.7s;
+  opacity: 0;
+}
+.main-logo-gris {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  background-color: gainsboro;
+  border-radius: 30px;
+  top: 20px;
+  left: 25px;
+  text-align: center;
+}
+.main-logo-gris-hide {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  background-color: gainsboro;
+  border-radius: 30px;
+  top: 20px;
+  left: 25px;
+  text-align: center;
+}
+.main-event {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  background-color: gainsboro;
+  border-radius: 30px;
+  top: 100px;
+  text-align: center;
+  left: 25px;
+}
+
+.main-event-hide {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  background-color: gainsboro;
+  border-radius: 30px;
+  top: 100px;
+  text-align: center;
+  left: 25px;
+}

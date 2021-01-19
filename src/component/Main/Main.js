@@ -8,6 +8,14 @@ class Main extends React.Component {
   render() {
     return (
       <div className={this.props.classMain}>
+        <div className={this.props.classMainLogoBig}>
+          <div className={this.props.classMainLogo}>
+            {" "}
+            <p>LOGO</p>
+          </div>
+          <div className={this.props.classMainEvent}> Event </div>
+        </div>
+        <div className={this.props.classMainDetails}> Details</div>
         <div className={this.props.classMainTitle}> Featured meetings </div>
         <div className={this.props.classMainGirs}>
           <div className="main-gris"></div>
