@@ -8,8 +8,13 @@ class Carte extends React.Component {
 
   render() {
     return (
-      <div id="carte" className="normalclass">
-        <div className="carte-content">
+      <div
+        id={this.props.id}
+        // className="normalclass"
+        className={this.props.classCarteBlan}
+        onClick={this.props.handleClickCarte}
+      >
+        <div className={this.props.classCarteNoir}>
           <p>
             {" "}
             <img src={this.props.logo}></img>{" "}

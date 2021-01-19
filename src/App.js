@@ -15,7 +15,11 @@ class App extends React.Component {
       classHeaderTitle: "title_grand",
       classContent: "normalclass",
       classEvent: "normalclass",
-      classCarte: "carte-container",
+      classCarteNoir: "carte-noir",
+      classCarteBlan: "carte-blan",
+      classMain: "main-petit",
+      classMainTitle: "main-title-hide",
+      classMainGirs: "main-grid-hide",
       infos: [],
     };
   }
@@ -29,44 +33,53 @@ class App extends React.Component {
     });
   }
   handleClick = () => {
-    console.log("je suis clicker");
+    console.log("je suis clicker sur header");
+
     this.setState({
-      showContent: !this.state.showContent,
+      classHeader: "grandclass",
+      classHeaderTitle: "title_grand",
+      classContent: "normalclass",
+      classEvent: "normalclass",
+      classCarteNoir: "carte-noir",
+      classCarteBlan: "carte-blan",
+      classMain: "main-petit",
+      classMainTitle: "main-title-hide",
+      classMainGirs: "main-grid-hide",
     });
-    if (this.state.showContent == true) {
-      this.setState({
-        classHeader: "petitclass",
-        classHeaderTitle: "title_petit",
-        classContent: "hide",
-        classEvent: "fixe",
-        classCarte: "hide",
-      });
-    } else {
-      this.setState({
-        classHeader: "grandclass",
-        classHeaderTitle: "title_grand",
-        classContent: "normalclass",
-        classEvent: "normalclass",
-        classCarte: "carte-container",
-      });
-    }
+  };
+  handleClickCarte = (event) => {
+    console.log("je sis clicker sur la carte", event);
+    this.setState({
+      classHeader: "petitclass",
+      classHeaderTitle: "title_petit",
+      classContent: "hide",
+      classEvent: "fixe",
+      classCarteNoir: "carte-noir-hide",
+      classCarteBlan: "carte-blan-hide",
+      classMain: "main-grand",
+      classMainTitle: "main-title",
+      classMainGirs: "main-grid",
+    });
   };
   render() {
-    // console.log("show content", this.state.showContent);
-    // console.log("classHeader", this.state.classHeader);
-    console.log("classCarte", this.state.classCarte);
-    console.log("infoss", this.state.infos);
+    console.log("show content", this.state.showContent);
+
     return (
       <div className="App">
         <Header {...this.state} handleClick={this.handleClick} />
         <Profil />
         <Content {...this.state} />
-        <Main />
+        <Main {...this.state} />
         <Evenement {...this.state} />
-        <div id="cartes" className={this.state.classCarte}>
+        <div id="cartes" className="carte-flex">
           {this.state.infos.map((info, index) => (
             <Carte
+              handleClickCarte={(e) => {
+                console.log(e);
+                this.handleClickCarte(e);
+              }}
               key={index}
+              id={info.id}
               title={info.title}
               detail={info.detail}
               logo={info.log}
