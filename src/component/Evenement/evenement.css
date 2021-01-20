@@ -36,3 +36,15 @@
   border-radius: 10px;
   margin-top: 10px;
 }
+.event-hide {
+  display: none;
+}
+.event-show {
+  visibility: visible;
+}
+.meet-hide {
+  display: none;
+}
+.meet-show {
+  visibility: visible;
+}
